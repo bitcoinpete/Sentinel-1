@@ -1,6 +1,6 @@
 # BitcoinPete's Dtmi Sentinel
 
-An all-powerful toolset for Dtmi.
+An all-powerful toolset for Dtmi. This is based on installing Dtmi in /root/dtmi/bin - if you've installed it somewhere else then make the appropriate adjustments.
 
 [![Build Status](https://travis-ci.org/dtmipay/sentinel.svg?branch=master)](https://travis-ci.org/dtmipay/sentinel)
 
@@ -21,17 +21,19 @@ Make sure Python version 2.7.x or above is installed:
 Update system packages and ensure virtualenv is installed:
 
     $ sudo apt-get update
+    $ sudo apt-get upgrade
     $ sudo apt-get -y install python-virtualenv
 
 Make sure the local Dtmi daemon running is at least version 12.1 (120100)
 
-    $ dtmi-cli getinfo | grep version
+    $ ./dtmi-cli getinfo | grep version
 
 ### 2. Install Sentinel
 
 Clone the Sentinel repo and install Python dependencies.
 
-    $ git clone https://github.com/bitcoinpete/sentinel-1.git && cd sentinel
+    $ apt install git
+    $ git clone https://github.com/bitcoinpete/sentinel-1.git && cd sentinel-1
     $ virtualenv ./venv
     $ ./venv/bin/pip install -r requirements.txt
 
