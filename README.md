@@ -1,6 +1,6 @@
 # BitcoinPete's Dtmi Sentinel
 
-An all-powerful toolset for Dtmi. This is based on installing Dtmi in /root/dtmi/bin - if you've installed it somewhere else then make the appropriate adjustments.
+An all-powerful toolset for Dtmi.
 
 [![Build Status](https://travis-ci.org/dtmipay/sentinel.svg?branch=master)](https://travis-ci.org/dtmipay/sentinel)
 
@@ -34,7 +34,6 @@ Clone the Sentinel repo and install Python dependencies.
 
     $ apt install git
     $ git clone https://github.com/bitcoinpete/sentinel-1.git && cd sentinel-1
-    $ mkdir database
     $ virtualenv ./venv
     $ ./venv/bin/pip install -r requirements.txt
 
@@ -46,7 +45,7 @@ Set up a crontab entry to call Sentinel every minute:
 
 In the crontab editor, add the lines below, replacing '/home/YOURUSERNAME/sentinel' to the path where you cloned sentinel to:
 
-    $ * * * * * cd /root/dtmi/bin/sentinel-1 && ./venv/bin/python bin/sentinel.py >/dev/null 2>&1
+    $ * * * * * cd /root/.dtmicore/sentinel-1 && ./venv/bin/python bin/sentinel.py >/dev/null 2>&1
 
 ### 4. Test the Configuration
 
