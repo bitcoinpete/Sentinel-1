@@ -34,6 +34,7 @@ Clone the Sentinel repo and install Python dependencies.
 
     $ apt install git
     $ git clone https://github.com/bitcoinpete/sentinel-1.git && cd sentinel-1
+    $ mkdir database
     $ virtualenv ./venv
     $ ./venv/bin/pip install -r requirements.txt
 
@@ -47,19 +48,19 @@ In the crontab editor, add the lines below, replacing '/home/YOURUSERNAME/sentin
 
     $ * * * * * cd /root/.dtmicore/sentinel-1 && ./venv/bin/python bin/sentinel.py >/dev/null 2>&1
 
-### 4. Test the Configuration
+### 4. Configuration
+
+Set the path to the `dtmi.conf` file in `sentinel.conf`:
+
+    dtmi_conf=/root/.dtmicore/dtmi.conf
+
+### 5. Test the Configuration
 
 Test the config by runnings all tests from the sentinel folder you cloned into
 
     $ ./venv/bin/py.test ./test
 
 With all tests passing and crontab setup, Sentinel will stay in sync with dtmid and the installation is complete
-
-## Configuration
-
-An alternative (non-default) path to the `dtmi.conf` file can be specified in `sentinel.conf`:
-
-    dtmi_conf=/path/to/dtmi.conf
 
 ## Troubleshooting
 
