@@ -90,4 +90,4 @@ Specifically:
 
 Released under the MIT license, under the same terms as DtmiCore itself. See [LICENSE](LICENSE) for more info.
 
-Broght to you in association with https://subsudio.io 
+Broght to you in association with https://subsudio.io
