@@ -1,4 +1,4 @@
-# BitcoinPete's Dtmi Sentinel
+# BitcoinPete's Dtmi Sentinel Setup Guide
 
 An all-powerful toolset for Dtmi.
 
