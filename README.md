@@ -31,7 +31,7 @@ Make sure the local Dtmi daemon running is at least version 12.1 (120100)
 
 Clone the Sentinel repo and install Python dependencies.
 
-    $ git clone https://github.com/dtmipay/sentinel.git && cd sentinel
+    $ git clone https://github.com/bitcoinpete/sentinel.git && cd sentinel
     $ virtualenv ./venv
     $ ./venv/bin/pip install -r requirements.txt
 
