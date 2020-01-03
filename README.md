@@ -34,6 +34,7 @@ Clone the Sentinel repo and install Python dependencies.
 
     $ apt install git
     $ git clone https://github.com/bitcoinpete/sentinel-1.git && cd sentinel-1
+    $ mkdir database
     $ virtualenv ./venv
     $ ./venv/bin/pip install -r requirements.txt
 
