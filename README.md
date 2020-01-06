@@ -49,7 +49,7 @@ Set up a crontab entry to call Sentinel every minute:
 
     $ crontab -e
 
-In the crontab editor, add the lines below, replacing '/home/YOURUSERNAME/sentinel' to the path where you cloned sentinel to:
+In the crontab editor, add the lines below, replacing '/home/YOURUSERNAME/sentinel-1' to the path where you cloned sentinel to:
 
     $ * * * * * cd /root/.dtmicore/sentinel-1 && ./venv/bin/python bin/sentinel.py >/dev/null 2>&1
 
