@@ -43,7 +43,13 @@ Clone the Sentinel repo and install Python dependencies:
     $ virtualenv ./venv
     $ ./venv/bin/pip install -r requirements.txt
 
-### 3. Set up Cron
+### 3. Configuration
+
+Set the path to the `dtmi.conf` file in `sentinel.conf`:
+
+    dtmi_conf=/root/.dtmicore/dtmi.conf
+    
+### 4. Set up Cron
 
 Set up a crontab entry to call Sentinel every minute:
 
@@ -52,12 +58,6 @@ Set up a crontab entry to call Sentinel every minute:
 In the crontab editor, add the lines below, replacing '/home/YOURUSERNAME/sentinel-1' to the path where you cloned sentinel to:
 
     $ * * * * * cd /root/.dtmicore/sentinel-1 && ./venv/bin/python bin/sentinel.py >/dev/null 2>&1
-
-### 4. Configuration
-
-Set the path to the `dtmi.conf` file in `sentinel.conf`:
-
-    dtmi_conf=/root/.dtmicore/dtmi.conf
 
 ### 5. Test the Configuration
 
