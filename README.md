@@ -28,13 +28,13 @@ Update system packages and ensure virtualenv is installed:
     $ sudo apt-get upgrade
     $ sudo apt-get -y install python-virtualenv
 
-Make sure the local Dtmi daemon running is at least version 12.1 (120100)
+Make sure the local Dtmi daemon running is at least version 12.1 (120100):
 
     $ ./dtmi-cli getinfo | grep version
 
 ### 2. Install Sentinel
 
-Clone the Sentinel repo and install Python dependencies.
+Clone the Sentinel repo and install Python dependencies:
 
     $ apt install git
     $ cd /root/.dtmicore
