@@ -18,9 +18,9 @@ Make sure Python version 2.7.x or above is installed:
 
     python --version
 
-If not installed then install
+If not installed then install:
 
-$ apt install python
+    $ apt install python
 
 Update system packages and ensure virtualenv is installed:
 
