@@ -33,6 +33,7 @@ Make sure the local Dtmi daemon running is at least version 12.1 (120100)
 Clone the Sentinel repo and install Python dependencies.
 
     $ apt install git
+    $ cd /root/.dtmicore
     $ git clone https://github.com/bitcoinpete/sentinel-1.git && cd sentinel-1
     $ mkdir database
     $ virtualenv ./venv
