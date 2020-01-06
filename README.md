@@ -14,19 +14,22 @@ This guide covers installing Sentinel onto an existing 12.1 Masternode in Ubuntu
 
 ### 1. Install Prerequisites
 
-Update system packages and ensure virtualenv is installed:
+Update system packages:
 
     $ sudo apt-get update
     $ sudo apt-get upgrade
-    $ sudo apt-get -y install python-virtualenv
 
 Make sure Python version 2.7.x or above is installed:
 
     python --version
 
-If not installed then install:
+If not installed yet then install in:
 
     $ apt install python
+    
+Ensure that virtualenv is also installed:
+
+    $ sudo apt-get -y install python-virtualenv
 
 Make sure the local Dtmi daemon running is at least version 12.1 (120100):
 
